@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechHub - Smart Learning and Technical Support Platform">
+    <meta name="author" content="TechHub Team">
+    <title>TechHub | Smart Digital Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <a href="#home" class="logo">Tech<span>Hub</span></a>
+
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#login">Sign In</a>
+            <a href="#register">Create Account</a>
+        </nav>
+
+        <select id="language" name="language">
+            <option value="en" selected>English</option>
+            <option value="ar">العربية</option>
+        </select>
+
+    </header>
+
+    <main>
+
+        <section id="home" class="page-section">
+
+            <div class="hero">
+
+                <h1>Welcome to TechHub</h1>
+
+                <p>Your smart platform for learning and technical support.</p>
+
+                <h2>How can we help you today?</h2>
+
+            </div>
+
+            <div class="portals">
+
+                <article class="portal-card">
+
+                    <h2>TechFix</h2>
+
+                    <p>Smart Technical Support</p>
+
+                    <p>
+                        Diagnose device problems, discover possible causes,
+                        and find suitable solutions with AI assistance.
+                    </p>
+
+                    <span>AI Powered</span>
+
+                    <a href="#techfix">Explore TechFix</a>
+
+                </article>
+
+                <article class="portal-card">
+
+                    <h2>Student Hub</h2>
+
+                    <p>Smart Educational Portal</p>
+
+                    <p>
+                        Organize your studies, manage educational tasks,
+                        and track your academic progress.
+                    </p>
+
+                    <span>AI Powered</span>
+
+                    <a href="#student-hub">Explore Student Hub</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="page-section">
+
+            <h1>About TechHub</h1>
+
+            <p>
+                TechHub is an integrated digital platform that combines
+                smart educational organization and intelligent technical
+                support using artificial intelligence technologies.
+            </p>
+
+            <h2>Our Vision</h2>
+
+            <p>
+                To make learning and technical problem-solving easier,
+                smarter, and more accessible.
+            </p>
+
+            <h2>Our Mission</h2>
+
+            <p>
+                To provide users with intelligent tools that improve
+                their educational and technical experiences.
+            </p>
+
+        </section>
+
+        <section id="login" class="page-section auth-container">
+
+            <div class="auth-card">
+
+                <h1>Welcome Back</h1>
+
+                <p>Sign in to continue using TechHub.</p>
+
+                <form id="login-form">
+
+                    <label for="login-email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="login-password">Password</label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <label>
+                        <input type="checkbox" name="remember">
+                        Remember Me
+                    </label>
+
+                    <a href="#reset-password">Forgot Password?</a>
+
+                    <button type="submit">Sign In</button>
+
+                </form>
+
+                <p>
+                    Don't have an account?
+                    <a href="#register">Create Account</a>
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- REGISTER PAGE -->
+
+        <section id="register" class="page-section auth-container">
+
+            <div class="auth-card">
+
+                <h1>Create Your Account</h1>
+
+                <p>Join TechHub and explore our services.</p>
+
+                <form id="register-form">
+
+                    <label for="register-name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="register-name"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                    <label for="register-email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="register-password">Password</label>
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        name="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                    <label for="confirm-password">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                    <label for="account-type">Account Type</label>
+
+                    <select id="account-type" name="account-type" required>
+
+                        <option value="" selected disabled>
+                            Select Account Type
+                        </option>
+
+                        <option value="student">Student</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <label>
+                        <input type="checkbox" required>
+                        I agree to the Terms and Conditions.
+                    </label>
+
+                    <button type="submit">Create Account</button>
+
+                </form>
+
+                <p>
+                    Already have an account?
+                    <a href="#login">Sign In</a>
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="reset-password" class="page-section">
+
+            <h1>Reset Password</h1>
+
+            <p>Enter your email address to request a password reset.</p>
+
+            <form id="reset-form">
+
+                <label for="reset-email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="reset-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">Send Reset Request</button>
+
+            </form>
+
+            <a href="#login">Back to Sign In</a>
+
+        </section>
+
+        <section id="profile" class="page-section">
+
+            <h1>My Profile</h1>
+
+            <div class="profile-information">
+
+                <h2>Personal Information</h2>
+
+                <p>Name: <span id="profile-name">User Name</span></p>
+
+                <p>Email: <span id="profile-email">user@example.com</span></p>
+
+                <p>Account Type: <span id="profile-type">Student</span></p>
+
+                <a href="#settings">Edit Profile</a>
+
+            </div>
+
+        </section>
+
+        <section id="settings" class="page-section">
+
+            <h1>Account Settings</h1>
+
+            <div class="settings-group">
+
+                <h2>General Settings</h2>
+
+                <label for="settings-language">Preferred Language</label>
+
+                <select id="settings-language">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                </select>
+
+            </div>
+
+            <div class="settings-group">
+
+                <h2>Account Security</h2>
+
+                <a href="#reset-password">Change Password</a>
+
+            </div>
+
+            <button type="button">Save Changes</button>
+
+        </section>
+        <section id="techfix" class="page-section">
+
+            <h1>TechFix</h1>
+
+            <p>Intelligent Technical Support System</p>
+
+            <p>
+                Find and diagnose technical problems with AI assistance.
+            </p>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <h2>Device Diagnosis</h2>
+                    <p>Start diagnosing your device problems.</p>
+                    <a href="#device-selection">Start Diagnosis</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>AI Technical Assistant</h2>
+                    <p>Get help from our intelligent assistant.</p>
+                    <a href="#techfix-ai">Open AI Assistant</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>Support History</h2>
+                    <p>Review your previous technical issues.</p>
+                    <a href="#support-history">View History</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>Knowledge Base</h2>
+                    <p>Explore technical guides and common solutions.</p>
+                    <a href="#knowledge-base">Explore Guides</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="device-selection" class="page-section">
+
+            <h1>Select Your Device</h1>
+
+            <p>Choose the type of device you need help with.</p>
+
+            <div class="selection-grid">
+
+                <button type="button" data-device="computer">Computer</button>
+
+                <button type="button" data-device="laptop">Laptop</button>
+
+                <button type="button" data-device="tablet">Tablet</button>
+
+                <button type="button" data-device="phone">Smartphone</button>
+
+                <button type="button" data-device="other">Other Device</button>
+
+            </div>
+
+            <a href="#operating-system">Continue</a>
+
+        </section>
+
+        <section id="operating-system" class="page-section">
+
+            <h1>Select Operating System</h1>
+
+            <p>Choose the operating system installed on your device.</p>
+
+            <div class="selection-grid">
+
+                <button type="button">Windows</button>
+
+                <button type="button">Android</button>
+
+                <button type="button">iOS</button>
+
+                <button type="button">macOS</button>
+
+                <button type="button">Linux</button>
+
+                <button type="button">Other</button>
+
+            </div>
+
+            <a href="#diagnosis">Continue</a>
+
+        </section>
+
+        <section id="diagnosis" class="page-section">
+
+            <h1>Device Diagnosis</h1>
+
+            <p>
+                Describe the problem you are experiencing with your device.
+            </p>
+
+            <form id="diagnosis-form">
+
+                <label for="problem-category">Problem Category</label>
+
+                <select id="problem-category" required>
+
+                    <option value="" selected disabled>
+                        Select Problem Category
+                    </option>
+
+                    <option value="performance">Performance Issues</option>
+
+                    <option value="connection">Internet Connection</option>
+
+                    <option value="software">Software Problems</option>
+
+                    <option value="battery">Battery Problems</option>
+
+                    <option value="display">Display Problems</option>
+
+                    <option value="other">Other</option>
+
+                </select>
+
+                <label for="problem-description">Problem Description</label>
+
+                <textarea
+                    id="problem-description"
+                    rows="5"
+                    placeholder="Describe your problem..."
+                    required
+                ></textarea>
+
+                <button type="submit">Start Diagnosis</button>
+
+            </form>
+
+            <a href="#techfix-ai">Continue to AI Assistant</a>
+
+        </section>
+
+        <section id="techfix-ai" class="page-section">
+
+            <h1>TechFix AI Assistant</h1>
+
+            <p>
+                Your intelligent technical support assistant.
+            </p>
+
+            <div class="chat-container">
+
+                <div class="chat-messages" id="techfix-messages">
+
+                    <div class="ai-message">
+                        Hello! How can I help you with your device today?
+                    </div>
+
+                </div>
+
+                <form id="techfix-chat-form">
+
+                    <input
+                        type="text"
+                        id="techfix-message"
+                        placeholder="Describe your technical problem..."
+                        required
+                    >
+
+                    <button type="submit">Send</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section id="diagnosis-results" class="page-section">
+
+            <h1>Diagnosis Results</h1>
+
+            <div class="results-container">
+
+                <h2>Possible Causes</h2>
+
+                <div id="possible-causes">
+                    <p>Diagnosis results will appear here.</p>
+                </div>
+
+                <h2>Confidence Level</h2>
+
+                <div id="confidence-level">
+                    Waiting for diagnosis...
+                </div>
+
+            </div>
+
+            <a href="#solutions">View Suggested Solutions</a>
+
+        </section>
+
+        <section id="solutions" class="page-section">
+
+            <h1>Suggested Solutions</h1>
+
+            <div id="suggested-solutions">
+
+                <p>
+                    Suitable solutions will be displayed after diagnosis.
+                </p>
+
+            </div>
+
+            <a href="#support-ticket">Create Support Ticket</a>
+
+        </section>
+
+        <section id="support-ticket" class="page-section">
+
+            <h1>Create Support Ticket</h1>
+
+            <form id="support-ticket-form">
+
+                <label for="ticket-title">Issue Title</label>
+
+                <input
+                    type="text"
+                    id="ticket-title"
+                    placeholder="Enter issue title"
+                    required
+                >
+
+                <label for="ticket-description">Issue Details</label>
+
+                <textarea
+                    id="ticket-description"
+                    rows="5"
+                    placeholder="Describe the issue..."
+                    required
+                ></textarea>
+
+                <label for="ticket-priority">Priority</label>
+
+                <select id="ticket-priority">
+
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+
+                </select>
+
+                <button type="submit">Submit Ticket</button>
+
+            </form>
+
+        </section>
+
+        <section id="support-history" class="page-section">
+
+            <h1>Previous Support Requests</h1>
+
+            <div id="support-history-list">
+
+                <p>No previous support requests available.</p>
+
+            </div>
+
+        </section>
+
+
+        <section id="knowledge-base" class="page-section">
+
+            <h1>Technical Knowledge Base</h1>
+
+            <input
+                type="search"
+                id="knowledge-search"
+                placeholder="Search technical guides..."
+            >
+
+            <div class="knowledge-grid">
+
+                <article>
+                    <h2>Internet Problems</h2>
+                    <p>Guides for common internet connection issues.</p>
+                </article>
+
+                <article>
+                    <h2>Device Performance</h2>
+                    <p>Guides for common performance problems.</p>
+                </article>
+
+                <article>
+                    <h2>Software Issues</h2>
+                    <p>Guides for software troubleshooting.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="student-hub" class="page-section">
+
+            <h1>Student Hub</h1>
+
+            <p>Your intelligent educational companion.</p>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <h2>Study Schedule</h2>
+                    <p>Organize your study timetable.</p>
+                    <a href="#schedule">Open Schedule</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>Tasks</h2>
+                    <p>Manage homework and assignments.</p>
+                    <a href="#tasks">Manage Tasks</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>Study Planner</h2>
+                    <p>Create an organized study plan.</p>
+                    <a href="#study-planner">Open Planner</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>Academic Progress</h2>
+                    <p>Track your educational progress.</p>
+                    <a href="#progress">View Progress</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>Learning Library</h2>
+                    <p>Access educational resources.</p>
+                    <a href="#library">Open Library</a>
+                </article>
+
+                <article class="feature-card">
+                    <h2>AI Learning Assistant</h2>
+                    <p>Learn with personalized AI explanations.</p>
+                    <a href="#student-ai">Ask AI</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="student-dashboard" class="page-section">
+
+            <h1>Student Dashboard</h1>
+
+            <p>Welcome to your learning dashboard.</p>
+
+            <div class="dashboard-cards">
+
+                <article>
+                    <h2>My Tasks</h2>
+                    <span id="dashboard-tasks">0</span>
+                </article>
+
+                <article>
+                    <h2>Completed Tasks</h2>
+                    <span id="dashboard-completed">0</span>
+                </article>
+
+                <article>
+                    <h2>Study Progress</h2>
+                    <span id="dashboard-progress">0%</span>
+                </article>
+
+            </div>
+
+            <a href="#student-hub">Back to Student Hub</a>
+
+        </section>
+        <section id="schedule" class="page-section">
+
+            <h1>Study Schedule</h1>
+
+            <form id="schedule-form">
+
+                <label for="subject">Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Enter subject name"
+                    required
+                >
+
+                <label for="study-date">Date</label>
+
+                <input type="date" id="study-date" required>
+
+                <label for="study-time">Time</label>
+
+                <input type="time" id="study-time" required>
+
+                <button type="submit">Add to Schedule</button>
+
+            </form>
+
+            <div id="schedule-list">
+
+                <h2>My Schedule</h2>
+
+            </div>
+
+        </section>
+
+
+        <section id="tasks" class="page-section">
+
+            <h1>Task Management</h1>
+
+            <form id="task-form">
+
+                <label for="task-title">Task Title</label>
+
+                <input
+                    type="text"
+                    id="task-title"
+                    placeholder="Enter task name"
+                    required
+                >
+
+                <label for="task-subject">Subject</label>
+
+                <input
+                    type="text"
+                    id="task-subject"
+                    placeholder="Enter subject"
+                >
+
+                <label for="task-deadline">Deadline</label>
+
+                <input type="date" id="task-deadline">
+
+                <button type="submit">Add Task</button>
+
+            </form>
+
+            <div id="task-list">
+
+                <h2>My Tasks</h2>
+
+            </div>
+
+        </section>
+
+
+        <section id="study-planner" class="page-section">
+
+            <h1>Smart Study Planner</h1>
+
+            <p>
+                Create a study plan based on your subjects,
+                available time, and completed tasks.
+            </p>
+
+            <form id="planner-form">
+
+                <label for="planner-subject">Subject</label>
+
+                <input
+                    type="text"
+                    id="planner-subject"
+                    placeholder="Enter subject"
+                    required
+                >
+
+                <label for="available-time">Available Study Time</label>
+
+                <input
+                    type="number"
+                    id="available-time"
+                    min="1"
+                    placeholder="Hours per day"
+                    required
+                >
+
+                <label for="study-goal">Study Goal</label>
+
+                <textarea
+                    id="study-goal"
+                    placeholder="Describe your study goal..."
+                ></textarea>
+
+                <button type="submit">Create Study Plan</button>
+
+            </form>
+
+            <div id="study-plan-results"></div>
+
+        </section>
+
+        <section id="progress" class="page-section">
+
+            <h1>Academic Progress</h1>
+
+            <div class="progress-container">
+
+                <h2>Overall Progress</h2>
+
+                <div id="overall-progress">
+                    0%
+                </div>
+
+                <h2>Subject Performance</h2>
+
+                <div id="subject-progress"></div>
+
+                <h2>Completed Activities</h2>
+
+                <div id="completed-activities"></div>
+
+            </div>
+
+        </section>
+        <section id="library" class="page-section">
+
+            <h1>Learning Library</h1>
+
+            <input
+                type="search"
+                id="library-search"
+                placeholder="Search learning materials..."
+            >
+
+            <div class="library-grid">
+
+                <article>
+                    <h2>Programming</h2>
+                    <p>Programming learning resources.</p>
+                </article>
+
+                <article>
+                    <h2>Mathematics</h2>
+                    <p>Mathematics learning resources.</p>
+                </article>
+
+                <article>
+                    <h2>Science</h2>
+                    <p>Science learning resources.</p>
+                </article>
+
+                <article>
+                    <h2>Languages</h2>
+                    <p>Language learning resources.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="student-ai" class="page-section">
+
+            <h1>Student AI Assistant</h1>
+
+            <p>
+                Your personal AI learning assistant.
+            </p>
+
+            <div class="chat-container">
+
+                <div class="chat-messages" id="student-messages">
+
+                    <div class="ai-message">
+                        Hello! What would you like to learn today?
+                    </div>
+
+                </div>
+
+                <form id="student-chat-form">
+
+                    <input
+                        type="text"
+                        id="student-message"
+                        placeholder="Ask an educational question..."
+                        required
+                    >
+
+                    <button type="submit">Send</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section id="learning-analysis" class="page-section">
+
+            <h1>Learning Analysis</h1>
+
+            <p>
+                Analyze your learning progress and identify
+                areas that need more attention.
+            </p>
+
+            <div class="analysis-container">
+
+                <h2>Strength Areas</h2>
+
+                <div id="strength-areas"></div>
+
+                <h2>Areas for Improvement</h2>
+
+                <div id="improvement-areas"></div>
+
+                <h2>AI Recommendations</h2>
+
+                <div id="learning-recommendations"></div>
+
+            </div>
+
+        </section>
+
+        <section id="academic-profile" class="page-section">
+
+            <h1>Academic Profile</h1>
+
+            <form id="academic-profile-form">
+
+                <label for="grade">Grade Level</label>
+
+                <input
+                    type="text"
+                    id="grade"
+                    placeholder="Enter your grade"
+                >
+
+                <label for="academic-track">Academic Track</label>
+
+                <input
+                    type="text"
+                    id="academic-track"
+                    placeholder="Enter your academic track"
+                >
+
+                <label for="academic-goals">Academic Goals</label>
+
+                <textarea
+                    id="academic-goals"
+                    placeholder="Describe your goals..."
+                ></textarea>
+
+                <button type="submit">Save Academic Profile</button>
+
+            </form>
+
+        </section>
+
+        <section id="admin-dashboard" class="page-section">
+
+            <h1>Admin Dashboard</h1>
+
+            <p>Platform Management and Administration.</p>
+
+            <div class="dashboard-cards">
+
+                <article>
+                    <h2>Total Users</h2>
+                    <span id="total-users">0</span>
+                </article>
+
+                <article>
+                    <h2>Support Requests</h2>
+                    <span id="total-requests">0</span>
+                </article>
+
+                <article>
+                    <h2>Platform Activities</h2>
+                    <span id="total-activities">0</span>
+                </article>
+
+            </div>
+
+            <div class="admin-links">
+
+                <a href="#user-management">User Management</a>
+
+                <a href="#content-management">Content Management</a>
+
+                <a href="#statistics">Platform Statistics</a>
+
+            </div>
+
+        </section>
+
+        <section id="user-management" class="page-section">
+
+            <h1>User Management</h1>
+
+            <div id="users-list">
+
+                <p>User information will appear here.</p>
+
+            </div>
+
+        </section>
+
+        <section id="content-management" class="page-section">
+
+            <h1>Content Management</h1>
+
+            <form id="content-form">
+
+                <label for="content-title">Content Title</label>
+
+                <input
+                    type="text"
+                    id="content-title"
+                    placeholder="Enter content title"
+                    required
+                >
+
+                <label for="content-category">Category</label>
+
+                <select id="content-category">
+
+                    <option value="technical">Technical Support</option>
+
+                    <option value="educational">Educational Content</option>
+
+                </select>
+
+                <label for="content-description">Description</label>
+
+                <textarea
+                    id="content-description"
+                    placeholder="Enter content description..."
+                ></textarea>
+
+                <button type="submit">Add Content</button>
+
+            </form>
+
+            <div id="managed-content"></div>
+
+        </section>
+
+        <section id="statistics" class="page-section">
+
+            <h1>Platform Statistics</h1>
+
+            <div class="statistics-grid">
+
+                <article>
+                    <h2>Registered Users</h2>
+                    <span id="statistics-users">0</span>
+                </article>
+
+                <article>
+                    <h2>Technical Diagnoses</h2>
+                    <span id="statistics-diagnoses">0</span>
+                </article>
+
+                <article>
+                    <h2>AI Conversations</h2>
+                    <span id="statistics-ai">0</span>
+                </article>
+
+                <article>
+                    <h2>Educational Activities</h2>
+                    <span id="statistics-learning">0</span>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+        <p>© 2026 TechHub. All Rights Reserved.</p>
+
+        <a href="#home">Back to Home</a>
+
+    </footer>
+
+    <script src="script.js"></script>
+<script>(function(){var l=function(){var s=document.createElement("script");s.src="https://widget.asyntai.com/static/js/chat-widget.js";s.async=true;s.setAttribute("data-asyntai-id","asyntai_e5ca6f905878");document.head.appendChild(s)};if(document.readyState==="complete"){l()}else{window.addEventListener("load",l)}})();</script>
+</body>
+
+</html>
